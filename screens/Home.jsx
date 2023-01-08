@@ -13,8 +13,8 @@ import Icon from 'react-native-vector-icons/MaterialIcons';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 const Home = () => {
-    const [todos, setTodos] = React.useState([]);
-    const [textInput, setTextInput] = React.useState('');
+    const [todos, setTodos] = useState([]);
+    const [textInput, setTextInput] = useState('');
 
     useEffect(() => {
         getTodosFromUserDevice();
